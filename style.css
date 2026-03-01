@@ -202,6 +202,7 @@ section{
 
     .intro_text {
         max-width: 500px;
+        margin: 0;
     }
 
     .intro img {
@@ -259,10 +260,12 @@ section{
 }
 
 .courses a{
+    display: block;
     font-size: 13px;
     font-weight: bold;
-    padding: 10px 30px;
+    text-align: center;
     width: 180px;
+    padding: 10px 0;
     border-radius: 10px;
     transition: 0.3s ease;
 }
@@ -307,6 +310,27 @@ section{
 
 .skyblue_btn{
     background-color: #2ac0db;
+}
+
+@media (max-width: 768px) {
+    .courses img{
+        max-height: 70px;
+        margin-bottom: 0px;
+    }
+    
+    .courses_content {
+        max-width: 160px;
+        height: 200px;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .courses_content a{
+        width: 100%;
+        font-size: 12px;
+        line-height: 32px;
+        padding: 1px 0;
+    }
 }
 
 .images{
